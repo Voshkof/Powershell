@@ -7,7 +7,7 @@ $Global:DefaultVIServers | select Name, Version, Build
 $Snapshots = Get-VM | Get-Snapshot 
     Write-Host '> Snapshots retrieved'
     Write-Host '> Writing report...'
-$Path 	= 'C:\Users\User\Snapshot_Report.html'
+$Path 	= 'C:\...\SnapshotReport.html'
 $Date 	= (get-date -UFormat '%d/%m/%Y - %R')
 $Header = @'
 	<title>Veeam Snapshots Report for $Date</title>
