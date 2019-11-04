@@ -1,4 +1,4 @@
-$vCenterServer  = 'vcentername'
+$vCenterServer  = 'vCenterName'
 $Credentials    = Import-Clixml 'C:\...\Credentials.xml'
 Connect-VIServer -Server $vCenterServer -Credential $Credentials 
     Write-Host "`n> Logged in" $vCenterServer
