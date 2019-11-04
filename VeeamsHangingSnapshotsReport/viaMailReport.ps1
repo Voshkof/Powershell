@@ -61,5 +61,6 @@ $Client.Credentials = [system.Net.CredentialCache]::DefaultNetworkCredentials
     Write-Host '> Sending e-mail...'
 $Client.Send($Message)
     Write-Host '> E-mail sent successfully'
+		Remove-Item $Path
 Disconnect-VIServer * -Confirm:$false
     Write-Host '> Logged out of' $vCenterServer
